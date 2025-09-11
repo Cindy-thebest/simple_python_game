@@ -1,5 +1,7 @@
 # Simple game in python
 from pyscript import display
+
+
 def start_game():
     output_message = "Hello from the *external* Python script!"
     display(output_message, target="output")
@@ -49,17 +51,3 @@ def start_game():
         print('Nice! You passed!')
     else:
         print('Better luck next time')
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -21,9 +21,16 @@
         <div id="output" style="margin-top: 20px;"></div>
     </div>
 
-    <!-- The script tag with type="py" contains the Python code -->
-    <script type="py"
-        src="./simpleGame.py">
-    </script>
+    <!-- Configure PyScript to load the external Python file -->
+    <py-config>
+        [[fetch]]
+        files = ["./simpleGame.py"]
+    </py-config>
+
+    <!-- A simple py-script block can be used here or leave it empty -->
+    <py-script>
+        # The external file main.py has been loaded and its functions are available.
+        print("PyScript is ready and main.py is loaded!")
+    </py-script>
 </body>
 </html>
