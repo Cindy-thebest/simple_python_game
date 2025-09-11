@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PyScript Example</title>
+
+    <!-- Link to the PyScript core libraries hosted on a CDN -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.2/core.css" />
+    <script defer src="https://pyscript.net/releases/2024.3.2/core.js"></script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>Python in the Browser!</h1>
+        <p>Click the button to run the Python code from 'simpleGame.py'.</p>
+
+        <!-- The button that triggers the Python function using `py-click` -->
+        <button id="my_button" py-click="start_game">Click Me</button>
+
+        <!-- The div where the Python output will be displayed -->
+        <div id="output" style="margin-top: 20px;"></div>
+    </div>
+
+    <!-- The script tag with type="py" contains the Python code -->
+    <script type="py"
+        src="./simpleGame.py">
+    </script>
+</body>
+</html>
