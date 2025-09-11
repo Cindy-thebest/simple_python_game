@@ -1,5 +1,8 @@
 # Simple game in python
+from pyscript import display
 def start_game():
+    output_message = "Hello from the *external* Python script!"
+    display(output_message, target="output")
     print('Hi, welcome to the Imagination Engine Lab!')
     print('Try to get as many questions correct as possible...')
 
