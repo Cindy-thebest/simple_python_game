@@ -6,7 +6,7 @@ secret_number = random.randint(1, 20)
 attempts = 0
 guess = 0
 
-print("I have picked a number between 1 and 20. Can you guess it?")
+print("I have picked a number between 1 and 30. Can you guess it?")
 while guess != secret_number:
     guess = int(input("Enter your guess: "))
     attempts += 1
